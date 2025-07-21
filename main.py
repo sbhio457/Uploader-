@@ -639,7 +639,7 @@ async def help_button(client, callback_query):
     
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_00000000fc2461fbbdd6bc500cecbff8_conversation_id6874702c-9760-800e-b0bf-8e0bcf8a3833message_id964012ce-7ef5-4ad4-88e0-1c41ed240c03-1-1.jpg",
+      media="https://graph.org/file/f855cca934b1365109838-069ee637b89fa81060.jpg",
       caption=caption
     ),
     reply_markup=keyboard
@@ -1076,14 +1076,14 @@ async def txt_handler(bot: Client, m: Message):
                 keys_string = " ".join([f"--key {key}" for key in keys])
 
             elif "classplusapp.com/drm/" in url:
-                url = f"https://team-jnc-ba95987c225e.herokuapp.com/api?url={url}"
+                url = f"https://cpapi-rjbs.onrender.com/extract_keys?url={url}@bots_updatee"
                 #url = f"https://scammer-keys.vercel.app/api?url={url}&token={cptoken}&auth=@scammer_botxz1"
                 mpd, keys = helper.get_mps_and_keys(url)
                 url = mpd
                 keys_string = " ".join([f"--key {key}" for key in keys])
 
             elif "classplusapp" in url:
-                signed_api = f"https://team-jnc-n-drm.vercel.app/api?url={url}"
+                signed_api = f"https://cpapi-rjbs.onrender.com/extract_keys?url={url}@bots_updatee"
                 response = requests.get(signed_api, timeout=10)
                 url = response.text.strip()
                 
@@ -1136,12 +1136,12 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'🔰Vid Id : {str(count).zfill(3)}\n\n**🔸Title :** {name1} \n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
-                cc1 = f'🔰Pdf Id : {str(count).zfill(3)}\n\n**🔸Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
-                cczip = f'🔰Zip Id : {str(count).zfill(3)}\n\n**🔸Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n' 
-                ccimg = f'🔰Img Id : {str(count).zfill(3)}\n\n**🔸Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
-                ccm = f'🔰Audio Id : {str(count).zfill(3)}\n\n**🔸Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
-                cchtml = f'🔰Html Id : {str(count).zfill(3)}\n\n**🔸Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
+                cc = f'⛦vid Id : {str(count).zfill(3)}\n\n**Title :** {name1} \n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
+                cc1 = f'⛦Pdf Id : {str(count).zfill(3)}\n\n**Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
+                cczip = f'⛦Zip Id : {str(count).zfill(3)}\n\n**Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n' 
+                ccimg = f'⛦Img Id : {str(count).zfill(3)}\n\n**Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
+                ccm = f'⛦Audio Id : {str(count).zfill(3)}\n\n**Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
+                cchtml = f'⛦Html Id : {str(count).zfill(3)}\n\n**Title :** {name1}\n\n<blockquote><b> 💠 Course :</b> {b_name}</blockquote>\n\n**Downloaded By-**{CR}\n'
                   
                 if "drive" in url:
                     try:
